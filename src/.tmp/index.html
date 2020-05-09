@@ -7,20 +7,26 @@
   <meta name="Aircrft" content="The Startup Network. Startups helping startups. Share what your working on at the moment, get support, help other startups.">
 
   <!-- Libs CSS -->
-  <link rel="stylesheet" href="./assets/fonts/feather/feather.min.css">
-  <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css">
-  <link rel="stylesheet" href="./assets/libs/select2/dist/css/select2.min.css">
-  <link rel="stylesheet" href="./assets/libs/highlight.js/styles/vs2015.css">
+  <!-- build:css ./assets/fonts/feather/feather.min.css -->
+  <link rel="stylesheet" href="./assets/fonts/feather/feather.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="./node_modules/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="./node_modules/quill/dist/quill.core.css">
+  <link rel="stylesheet" href="./node_modules/select2/dist/css/select2.min.css">
+  <link rel="stylesheet" href="./node_modules/highlight.js/styles/vs2015.css">
 
   <!-- Map -->
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
   <!-- Theme CSS -->
     
-  <link rel="stylesheet" href="./assets/css/theme.min.css" id="stylesheetLight">
+  <!-- build:css ./assets/css/theme.min.css id="stylesheetLight" -->
+  <link rel="stylesheet" href="./assets/css/theme.css" id="stylesheetLight">
+  <!-- endbuild -->
 
-  <link rel="stylesheet" href="./assets/css/theme-dark.min.css" id="stylesheetDark">
+  <!-- build:css ./assets/css/theme-dark.min.css id="stylesheetDark" -->
+  <link rel="stylesheet" href="./assets/css/theme-dark.css" id="stylesheetDark">
+  <!-- endbuild -->
 
   <style>body { display: none; }</style>
   
@@ -9739,7 +9745,7 @@
       <div class="row justify-content-center">
         <div class="col-12 col-xl-8">
 
-          <!-- Card -->
+          <!-- Card Platform Post 5.9.2020-->
           <div class="card">
             <div class="card-body">
 
@@ -9783,7 +9789,51 @@
             </div>
           </div>
 
-          <!-- Card -->
+          <!-- Card AIRCRFT Platform Post 5.10.2020-->
+          <div class="card">
+            <div class="card-body">
+          
+              <!-- Header -->
+              <div class="mb-3">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+          
+                    <!-- Avatar -->
+                    <a href="#!" class="avatar">
+                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                    </a>
+          
+                  </div>
+                  <div class="col ml-n2">
+          
+                    <!-- Title -->
+                    <h4 class="card-title mb-1">
+                      Chai Forest
+                    </h4>
+          
+                    <!-- Time -->
+                    <p class="card-text small text-muted">
+                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">45min
+                        ago</time>
+                    </p>
+          
+                  </div>
+                  <div class="col-auto">
+          
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+          
+              <!-- Image -->
+              <p class="text-center mb-3">
+                <img src="assets/img/posts/aircrft-platform-post-5-9-2020.png" alt="aircrft uplift algorithm"
+                  class="img-fluid rounded">
+              </p>
+          
+            </div>
+          </div>
+
+          <!-- Card AIRCRFT Platform Post 5.11.2020-->
           <div class="card">
             <div class="card-body">
           
@@ -9956,25 +10006,46 @@
   <!-- JAVASCRIPT
     ================================================== -->
   <!-- Libs JS -->
-  <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
-  <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
-  <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
-  <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-  <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-  <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-  <script src="./assets/libs/list.js/dist/list.min.js"></script>
-  <script src="./assets/libs/quill/dist/quill.min.js"></script>
-  <script src="./assets/libs/select2/dist/js/select2.min.js"></script>
-  <script src="./assets/libs/chart.js/Chart.extension.min.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+  <script src="./node_modules/autosize/dist/autosize.min.js"></script>
+  <script src="./node_modules/chart.js/dist/Chart.min.js"></script>
+  <script src="./node_modules/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="./node_modules/flatpickr/dist/flatpickr.min.js"></script>
+  <script src="./node_modules/highlightjs/highlight.pack.min.js"></script>
+  <script src="./node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+  <script src="./node_modules/list.js/dist/list.min.js"></script>
+  <script src="./node_modules/quill/dist/quill.min.js"></script>
+  <script src="./node_modules/select2/dist/js/select2.min.js"></script>
+  <!-- build:js ./assets/libs/chart.js/Chart.extension.min.js -->
+  <script src="./assets/libs/chart.js/Chart.extension.js"></script>
+  <!-- endbuild -->
 
   <!-- Map -->
   <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
   <!-- Theme JS -->
-  <script src="./assets/js/theme.min.js"></script>
+  <!-- build:js ./assets/js/theme.min.js -->
+  <script src="./assets/js/polyfills.js"></script>
+  <script src="./assets/js/demo.js"></script>
+  <script src="./assets/js/charts.js"></script>
+  <script src="./assets/js/charts-dark.js"></script>
+  <script src="./assets/js/autosize.js"></script>
+  <script src="./assets/js/dashkit.js"></script>
+  <script src="./assets/js/dropdowns.js"></script>
+  <script src="./assets/js/dropzone.js"></script>
+  <script src="./assets/js/flatpickr.js"></script>
+  <script src="./assets/js/highlight.js"></script>
+  <script src="./assets/js/kanban.js"></script>
+  <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/map.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/popover.js"></script>
+  <script src="./assets/js/quill.js"></script>
+  <script src="./assets/js/select2.js"></script>
+  <script src="./assets/js/tooltip.js"></script>
+  <!-- endbuild -->
 
 </body>
 
