@@ -1,19 +1,44 @@
 <!doctype html>
-<html lang=“en”>
+<html lang="en">
 
 <head>
-  @@include(“partials/head.html”, {
-  “title”: “AIRCRFT Platform Feed 5.25.2020 D220”
+  @@include("partials/head.html", {
+  "title": "AIRCRFT Platform Feed"
   })
 </head>
 
 <body>
 
-  <!— MODALS
-    ================================================== —>
-  @@include(“partials/modals.html”)
-  @@include(“partials/modals.html”)
+  <!-- MODALS
+    ================================================== -->
+  @@include("partials/modals.html")
+  @@include("partials/modals.html")
 
+  <!-- NAVIGATION
+    ================================================== -->
+  @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+  @@if (sidebarSize == 'base' || demoMode) {
+  @@include("partials/sidebar.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
+  @@if (sidebarSize == 'small' || demoMode) {
+  @@include("partials/sidebar-sm.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
+  }
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
 
   <!— MAIN CONTENT
     ================================================== —>
