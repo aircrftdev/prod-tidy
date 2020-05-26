@@ -16,7 +16,29 @@
 
   <!-- NAVIGATION
     ================================================== -->
-
+  @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+  @@if (sidebarSize == 'base' || demoMode) {
+  @@include("partials/sidebar.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
+  @@if (sidebarSize == 'small' || demoMode) {
+  @@include("partials/sidebar-sm.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
+  }
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
 
   <!-- MAIN CONTENT
     ================================================== -->
