@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Aircrft"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+      @@if (sidebarSize == 'base' || demoMode) {
+        @@include("partials/sidebar.html", {
+          "category": "pages",
+          "subcategory": "project",
+          "page": "aircfrt-homepage-iframe-3-23-2020.html"
+        })
+      }
+      @@if (sidebarSize == 'small' || demoMode) {
+        @@include("partials/sidebar-sm.html", {
+          "category": "pages",
+          "subcategory": "project",
+          "page": "aircfrt-homepage-iframe-3-23-2020.html"
+        })
+      }
+    }
+    @@if (navPosition == 'topnav' || demoMode) {
+      @@include("partials/topnav.html", {
+        "category": "pages",
+        "subcategory": "project",
+        "page": "aircfrt-homepage-iframe-3-23-2020.html"
+      })
+    }
+
+  <!-- MAIN CONTENT
+    ================================================== -->
+  <div class="main-content">
+
+    @@if (navPosition == 'combo' || demoMode) {
+    @@include("partials/topbar.html")
+    }
+
+        <!-- CONTENT -->
+        <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+          <div class="row">
+            <div class="col-12">
+
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://rocket.aircrftengine.com/" allowfullscreen></iframe>
+              </div>
+  
+            </div>   
+
+      </div> <!-- / .main-content -->
+  
+      <!-- JAVASCRIPT
+      ================================================== -->
+      @@include("partials/scripts.html")
+  
+    </body>
+  </html>
